@@ -14,10 +14,12 @@ public class ServletHolaMundo extends HttpServlet {
             throws ServletException, IOException {
         res.setContentType("text/html");
         PrintWriter out = new PrintWriter(res.getOutputStream());
+        
         out.println("<html>");
-        out.println("<head><title>HolaMundoServlet</title></head>");
+        out.println("<head><title>HolaMundoServlet</title>");
+        out.println("<LINK REL=\"stylesheet\" TYPE=\"text/css\" HREF=\"estilo/css.css\"></head>");
         out.println("<body>");
-        out.println("<h1><center>Hola   Mundo   desde   el   servidor WEB</center></h1>");
+        out.println("<h2><center>Hola   Mundo   desde   el   servidor WEB</center></h2>");
         out.println("</body></html>");
         out.close();
     }
